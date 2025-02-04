@@ -254,6 +254,77 @@
     border: none;
   }
 
+  /* Why choose us section */
+
+  .choose_us p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 45.375rem;
+    margin: 6.25rem 0 9.37rem 0;
+  }
+
+  ol.side_bar {
+    border-left: 1px solid rgba(47, 53, 63, 0.14);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31.40625rem;
+    padding: 0.37rem 0 0.37rem 2.97rem;
+  }
+
+  .side_bar li::marker {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  .side_bar li {
+    font-size: 2rem;
+    color: rgba(47, 53, 63, 0.3);
+    height: 3.75rem;
+    align-content: center;
+  }
+
+  .side_bar li:first-child {
+    color: var(--main-blue, #2e2bd0);
+    border-left: 5px solid #2e2bd0;
+    padding-left: 3.18rem;
+    margin-left: -3.18rem;
+    border-radius: 0.2rem;
+  }
+
+  .choose_us div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 65rem;
+    height: 26rem;
+    border-radius: 4.375rem;
+    border: 1px solid rgba(47, 53, 63, 0.5);
+    padding-left: 3.12rem;
+    float: right;
+  }
+
+  .choose_us div p {
+    margin: 0;
+    width: 63.5rem;
+  }
+
+  .choose_us h4 {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
   /* How we work section */
   .work_tiles {
     display: grid;
@@ -589,6 +660,134 @@
 
   header .contact_us {
     display: none;
+  }
+
+  /* Our goals section */
+
+  .klausimas {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 15.63rem 0 6.25rem 2.5rem;
+  }
+
+  .bl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5.625rem;
+    border: 1px solid #2f353f;
+    height: 28.6875rem;
+    background-position: center;
+    padding: 6.25rem;
+  }
+
+  .nr {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .bl .title {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 4rem;
+  }
+
+  .bl .text {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .pic1 {
+    background-image: url("../images/index/Block_1.png");
+    background-size: cover;
+    border: none;
+  }
+
+  .pic2 {
+    background: url("../images/index/Block_5.png");
+    background-size: cover;
+    border: none;
+  }
+
+  .pic3 {
+    background: url("../images/index/Block_6.png");
+    background-size: cover;
+    flex-shrink: 0;
+    border: none;
+  }
+
+  /* Why choose us section */
+
+  .choose_us p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 6.25rem 0 9.37rem 0;
+  }
+
+  ol.side_bar {
+    border-top: 1px solid rgba(47, 53, 63, 0.14);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  .side_bar li {
+    font-size: 2.375rem;
+    color: rgba(47, 53, 63, 0.3);
+    width: 10.1875rem;
+    align-content: center;
+  }
+
+  .side_bar li:first-child {
+    color: var(--main-blue, #2e2bd0);
+    border-top: 5px solid #2e2bd0;
+    border-radius: 0.4rem;
+  }
+
+  .choose_us div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    height: 46.125rem;
+    border-radius: 4.375rem;
+    border: 1px solid rgba(47, 53, 63, 0.5);
+  }
+
+  .choose_us div p {
+    margin: 0;
+  }
+
+  .choose_us h4 {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-weight: 400;
   }
 
   /* How we work section */
