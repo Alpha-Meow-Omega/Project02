@@ -1,0 +1,857 @@
+* {
+  font-family: "Neue Machina";
+  margin: 0;
+  color: rgba(47, 53, 63, 0.7);
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url(../fonts/PPNeueMachina-PlainRegular.otf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url(../fonts/TTNorms-Regular.otf);
+}
+
+html {
+  background-image: url(../images/both/background_noise.png);
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-blend-mode: lighten;
+}
+
+main {
+  width: 100vw;
+}
+
+/* -----Desktop----- */
+
+@media (min-width: 601px) {
+  /* General */
+  html {
+    width: 120rem;
+    font-size: 0.834vw;
+  }
+
+  body {
+    padding-bottom: 3.13rem;
+  }
+
+  h2 {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  section {
+    padding: 0 9.38rem;
+    margin-bottom: 15.62rem;
+  }
+
+  /* Client endorsements section */
+
+  .comments {
+    display: flex;
+    margin: 6.25rem 0;
+  }
+
+  .clients {
+    border-radius: 2.5rem;
+    border: 1px solid #909398;
+    padding: 6.25rem 3.12rem 3.12rem 3.12rem;
+  }
+
+  .clients img {
+    width: 5.625rem;
+    height: 5.625rem;
+    margin-bottom: 0.94rem;
+  }
+
+  .clients h4 {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .clients span {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  .clients p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: inline-block;
+    margin: 3.13rem 0 4rem 0;
+  }
+
+  .clients button {
+    background: none;
+    padding: 1.0625rem 2.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--main-blue, #2e2bd0);
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .clients button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+  }
+
+  .client_seletor {
+    margin: auto auto 0 auto;
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .client_seletor img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  /* Form */
+
+  form.form {
+    height: 62.8rem;
+    border-radius: 4.375rem;
+    background: linear-gradient(66deg, #2e2bd0 -67.89%, #7876f2 125.28%);
+    margin: 0 1.88rem 15.63rem 1.88rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+    gap: 13.75rem;
+  }
+
+  form.form input {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "Neue Machina";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.84rem;
+    margin-top: 3.16rem;
+    width: 43.8rem;
+  }
+
+  div.left {
+    height: 80%;
+    margin: 6.25rem 0 4.75rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  form.form h1 {
+    color: var(--main-white, #fff);
+    font-family: "Neue Machina";
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: auto;
+  }
+
+  form.form input.submit {
+    width: inherit;
+    background-color: white;
+    padding: 1.0625rem 5.25rem 1.0625rem 2.5rem;
+    border-radius: 0.625rem;
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+  }
+
+  form.form input.submit + img {
+    position: relative;
+    bottom: 2.5rem;
+    left: 9.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .view_project {
+    display: none;
+  }
+
+  .view_project + img {
+    display: none;
+  }
+
+  div.right {
+    padding: 8.31rem 0;
+  }
+
+  form.form p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  span.itemail {
+    color: var(--main-white, #fff);
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration-line: underline;
+  }
+
+  form.form p + button {
+    margin: 3.6rem 0 2.47rem 0;
+    height: 1.5rem;
+    padding: 1.0625rem 2.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--main-white, #fff);
+    background: none;
+    color: var(--main-white, #fff);
+    font-family: "Neue Machina";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: min-content;
+  }
+
+  form.form .right button img {
+    display: inline-block;
+    margin-left: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  form.form .right input + img {
+    position: relative;
+    bottom: 3.8rem;
+    left: 41rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Footer  */
+
+  footer {
+    padding: 3.13rem 1.88rem;
+    border-top: 1px solid rgba(47, 53, 63, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 4.3rem;
+    width: fit-content;
+  }
+
+  footer * {
+    font-family: "Gilroy";
+  }
+
+  div.Contacts_Block {
+    width: fit-content;
+    margin: 0 31.31rem 0 7.5rem;
+  }
+
+  div.Contacts_Block img {
+    width: 2.81rem;
+    height: 2.81rem;
+    margin-bottom: 6.25rem;
+  }
+
+  div.Contacts_Block img + span {
+    display: none;
+  }
+
+  div.Contacts_Block p {
+    color: #2e2bd0;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  div.footer_icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.62rem;
+    width: min-content;
+    margin: 3rem 0 3.13rem 0;
+  }
+
+  div.footer_icons div {
+    border: 1px #2e2bd0 solid;
+    border-radius: 0.9375rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.footer_icons img {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin: 0;
+  }
+
+  a.contact_us {
+    font-family: "Neue Machina";
+    color: white;
+    background-color: #2e2bd0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+    width: 15.875rem;
+    height: 3.6875rem;
+    border-radius: 0.63rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 0;
+  }
+
+  a.contact_us img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+  }
+
+  div.Offices_Block {
+    display: grid;
+    height: 17.7rem;
+    line-height: 1.7em;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    font-size: 1.25rem;
+    width: max-content;
+    gap: 1.87rem;
+    margin-right: 12.5rem;
+  }
+
+  div.Offices_Block p:first-child {
+    font-family: "Neue Machina";
+    color: #2f353f;
+  }
+
+  .blue {
+    color: #2e2bd0;
+  }
+
+  .gray {
+    color: rgba(47, 53, 63, 0.5);
+  }
+
+  div.Services_Block {
+    color: #2f353f;
+    font-size: 1.25rem;
+    font-family: "Neue Machina";
+    width: max-content;
+    margin-right: 7.5rem;
+  }
+
+  div.Services_Block ol {
+    padding: 0;
+  }
+
+  div.Services_Block ol li {
+    color: #2e2bd0;
+    font-family: "Gilroy";
+    display: block;
+    padding-top: 1.87rem;
+  }
+
+  div.Services_Block ol li:first-child {
+    padding-top: 3.12rem;
+  }
+
+  div.Services_Block li::marker {
+    display: none;
+  }
+
+  div.add_info {
+    font-size: 1rem;
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-top: rgba(47, 53, 63, 0.5) solid 2px;
+    height: 4.31rem;
+    margin-top: 3.13rem;
+  }
+}
+
+/* -----Phone----- */
+
+@media (max-width: 600px) {
+  /* General */
+
+  html {
+    font-size: 1.485vw;
+    width: 600px;
+  }
+
+  h2 {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  section {
+    padding: 0 2.5rem;
+    margin-bottom: 15.62rem;
+  }
+
+  /* Client endorsements section */
+
+  .comments {
+    display: flex;
+    margin: 6.25rem 0;
+    width: 165rem;
+    gap: 1.25rem;
+    position: relative;
+    right: 51rem;
+  }
+
+  .clients {
+    border-radius: 2.5rem;
+    border: 2px solid #909398;
+    width: 55rem;
+    padding: 3.13rem;
+  }
+
+  .clients img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .clients h4 {
+    color: var(--main-blue, #2e2bd0);
+    display: inline-block;
+    font-family: "Neue Machina";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 3rem;
+    position: relative;
+    bottom: 4rem;
+    left: 3.12rem;
+  }
+
+  .clients span {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    position: relative;
+    right: 10.5rem;
+  }
+
+  .clients p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: inline-block;
+    margin: 6.25rem 0;
+  }
+
+  .clients button {
+    background: none;
+    padding: 1.5rem 2.5rem 1.0625rem 2.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--main-blue, #2e2bd0);
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .clients button img {
+    width: 2.125rem;
+    height: 2.125rem;
+    margin: 0;
+  }
+
+  .client_seletor {
+    display: none;
+  }
+
+  /* Form */
+
+  form.form {
+    border-radius: 4.375rem;
+    background: linear-gradient(66deg, #2e2bd0 -67.89%, #7876f2 125.28%);
+    margin: 0 2.5rem 15.63rem 2.5rem;
+    padding: 3.75rem;
+  }
+
+  form.form input {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "Neue Machina";
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    margin-top: 3.81rem;
+    width: 100%;
+  }
+
+  form.form .right input:last-of-type {
+    margin-bottom: 3.125rem;
+  }
+
+  form.form h1 {
+    color: var(--main-white, #fff);
+    font-family: "Neue Machina";
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: auto;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  input.submit {
+    display: none;
+  }
+
+  form.form input.submit + img {
+    display: none;
+  }
+
+  form.form .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form.form p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    order: 5;
+  }
+
+  span.itemail {
+    color: var(--main-white, #fff);
+    font-family: "Gilroy";
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration-line: underline;
+  }
+
+  form.form button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.0625rem 2.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--main-white, #fff);
+    background: none;
+    color: var(--main-white, #fff);
+    font-family: "Neue Machina";
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    order: 3;
+    margin-bottom: 5rem;
+  }
+
+  form.form .right button img {
+    display: inline-block;
+    margin-left: 1.25rem;
+    width: 2.125rem;
+    height: 2.125rem;
+  }
+
+  form.form .right input + img {
+    position: relative;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 7.375rem;
+    left: 52rem;
+  }
+
+  form.form input.view_project {
+    width: 26.5rem;
+    background-color: white;
+    padding: 1.5rem 2.5rem 1.0625rem 2.5rem;
+    border-radius: 1.25rem;
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    margin-top: 7rem;
+  }
+
+  input.view_project + img {
+    position: relative;
+    width: 2.125rem;
+    height: 2.125rem;
+    bottom: 3.275rem;
+    left: 22.5rem;
+  }
+
+  /* Footer */
+
+  footer {
+    display: block;
+    margin: 0 2.5rem;
+    padding: 6.25rem 0;
+    border-top: 1px solid rgba(47, 53, 63, 0.5);
+  }
+
+  div.footer_logo {
+    display: flex;
+    height: min-content;
+    width: fit-content;
+    align-items: center;
+  }
+
+  div.footer_logo img {
+    width: 6.8125rem;
+    height: auto;
+    margin: 0;
+  }
+
+  div.Contacts_Block img + span {
+    display: inline-block;
+    color: var(--main-light, #2f353f);
+    font-family: "TT Norms";
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.125rem;
+    height: fit-content;
+    margin: 2rem 0 0 0.88rem;
+  }
+
+  div.Contacts_Block p {
+    color: var(--main-blue, #2e2bd0);
+    font-size: 2.125rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration-line: underline;
+    position: relative;
+    left: 32rem;
+    bottom: 2.5rem;
+  }
+
+  div.footer_icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.32rem;
+    width: min-content;
+    margin-top: 6.25rem;
+    margin-bottom: 3.13rem;
+  }
+
+  div.footer_icons div {
+    border: 1px #2e2bd0 solid;
+    border-radius: 1.875rem;
+    width: 7.9375rem;
+    height: 7.9375rem;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.footer_icons img {
+    width: 5.95313rem;
+    height: 5.95313rem;
+    margin: 0;
+  }
+
+  a.contact_us {
+    font-family: "Neue Machina";
+    color: white;
+    background-color: #2e2bd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.875rem;
+    padding: 1.5rem 2.5rem 1.0625rem 2.5rem;
+    border-radius: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 0;
+    width: 15.4rem;
+    height: 2.13rem;
+  }
+
+  a.contact_us img {
+    width: 2.125rem;
+    height: 2.125rem;
+    margin: 0;
+  }
+
+  div.Offices_Block {
+    display: grid;
+    grid-template: 4rem 17rem / 30.25rem 30.25rem;
+    gap: 3.4rem;
+    font-size: 1.25rem;
+    width: max-content;
+    font-size: 2.875rem;
+    height: fit-content;
+    width: max-content;
+    margin: 9.37rem 0;
+  }
+
+  div.Offices_Block p:first-child {
+    font-family: "Neue Machina";
+    color: #2f353f;
+    grid-column: 1/3;
+  }
+
+  .blue {
+    color: #2e2bd0;
+    font-family: "Gilroy";
+  }
+
+  .gray {
+    color: rgba(47, 53, 63, 0.5);
+    font-size: 2.5rem;
+    font-family: "Gilroy";
+    font-weight: 400;
+  }
+
+  span.tel {
+    color: rgba(47, 53, 63, 0.5);
+    margin: 3.12rem 0 1.69rem 0;
+    display: inline-block;
+    font-family: "Gilroy";
+  }
+
+  div.Services_Block {
+    color: #2f353f;
+    font-family: "Neue Machina";
+    width: max-content;
+    font-size: 2.875rem;
+  }
+
+  div.Services_Block ol {
+    padding: 0;
+    display: grid;
+    grid-template: repeat(3, 3rem) / repeat(2, 1fr);
+    row-gap: 2.81rem;
+    column-gap: 4.9rem;
+    margin: 3.13rem 0 6.56rem 0;
+  }
+
+  div.Services_Block ol li {
+    color: #2e2bd0;
+    font-family: "Gilroy";
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  div.Services_Block li::marker {
+    display: none;
+  }
+
+  div.add_info {
+    width: 100%;
+    border-top: rgba(47, 53, 63, 0.5) solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3.13rem;
+    padding-top: 3.13rem;
+  }
+
+  div.add_info p {
+    font-size: 2.5rem;
+    font-family: Gilroy;
+    color: rgba(47, 53, 63, 0.5);
+  }
+}
