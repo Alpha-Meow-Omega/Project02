@@ -2,7 +2,53 @@
 /* -----Desktop----- */
 
 @media (min-width: 601px) {
+    .we_are{
+        width: 120rem;
+        height: 61.1875rem;
+        flex-shrink: 0;
+    }
 
+    .we_are h2{
+        color: var(--main-light, #2F353F);
+        font-family: "Neue Machina";
+        font-size: 3.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .summary{
+        display: flex;
+        margin-top: 6.75rem;
+    }
+    
+    .summary .it{
+        color: rgba(47, 53, 63, 0.70);
+        font-family: Gilroy;
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        width: 47rem;
+    }
+
+    .summary div{
+        border-radius: 2.5rem;
+        border: 1px solid #2f353f;
+        width: 22.375rem;
+        height: 14.75rem;
+        flex-shrink: 0;
+    }
+
+    .nr{
+        color: var(--main-blue, #2E2BD0);
+        font-family: "Neue Machina";
+        font-size: 3.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 3.12rem;
+        margin-left: 3.12rem;
+    }
 }
 
 /* -----Phone----- */
