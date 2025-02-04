@@ -147,6 +147,117 @@
     display: none;
   }
 
+  /* Our goals section */
+  .klausimas{
+    color: var(--main-light, #2F353F);
+  font-family: "Neue Machina";
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0rem 9.37rem;
+  margin-top: 10rem;
+  }
+   
+  .goals{
+    display: flex;
+    flex-wrap: wrap;
+    width: 120rem;
+    padding: 0rem 9.375rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+  }
+   
+  .bl{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 4.375rem;
+    border: 1px solid #2F353F;
+  }
+   
+  .bl .nr{
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3.12rem;
+    margin-left: 3.12rem;
+  }
+   
+  .bl .title{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 3.12rem;
+    margin-bottom: 10.25rem;
+  }
+   
+  .bl .text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150% ;
+  }
+  .bl01,.bl02,.pic1 {
+    width: 33.75rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+    margin-top: 6.25rem;
+  }
+   
+  .bl01{
+    margin-left: 0rem;
+  }
+   
+  .bl02{
+    margin-left: 0rem;
+  }
+   
+  .pic1{
+    margin-left: 0rem;
+    background-image: url("../images/index/Block_1.png");
+    background-size: cover;
+  }
+   
+  .pic2,.bl03{
+    width: 50.6875rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+  }
+   
+  .pic2{
+    background: url("../images/index/Block_5.png");
+    background-size: cover;
+  }
+   
+  .bl03{
+    margin-left: 0rem
+  }
+   
+  .bl04{
+    width: 63.75rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+  }
+   
+  .pic3{
+    background: url("../images/index/Block_6.png");
+    background-size: cover;
+    width: 37.5rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+  }
+
   /* How we work section */
   .work_tiles {
     display: grid;
