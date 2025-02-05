@@ -461,6 +461,11 @@ main {
   section {
     padding: 0 2.5rem;
     margin-bottom: 15.62rem;
+    overflow-x: hidden;
+  }
+
+  footer {
+    overflow-x: hidden;
   }
 
   /* Client endorsements section */
