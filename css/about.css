@@ -1,58 +1,274 @@
-
 /* -----Desktop----- */
 
 @media (min-width: 601px) {
-    .we_are{
-        width: 120rem;
-        height: 61.1875rem;
-        flex-shrink: 0;
-    }
+  .we_are {
+    width: 120rem;
+    height: 61.1875rem;
+    flex-shrink: 0;
+  }
 
-    .we_are h2{
-        color: var(--main-light, #2F353F);
-        font-family: "Neue Machina";
-        font-size: 3.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    .summary{
-        display: flex;
-        margin-top: 6.75rem;
-    }
-    
-    .summary .it{
-        color: rgba(47, 53, 63, 0.70);
-        font-family: Gilroy;
-        font-size: 1.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        width: 47rem;
-    }
+  .we_are h2 {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .summary {
+    display: flex;
+    margin-top: 6.75rem;
+  }
 
-    .summary div{
-        border-radius: 2.5rem;
-        border: 1px solid #2f353f;
-        width: 22.375rem;
-        height: 14.75rem;
-        flex-shrink: 0;
-    }
+  .summary .it {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: Gilroy;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 47rem;
+  }
 
-    .nr{
-        color: var(--main-blue, #2E2BD0);
-        font-family: "Neue Machina";
-        font-size: 3.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-top: 3.12rem;
-        margin-left: 3.12rem;
-    }
+  .summary div {
+    border-radius: 2.5rem;
+    border: 1px solid #2f353f;
+    width: 22.375rem;
+    height: 14.75rem;
+    flex-shrink: 0;
+  }
+
+  .nr {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3.12rem;
+    margin-left: 3.12rem;
+  }
+
+  /* Our history */
+
+  .our_history {
+    padding: 0 1.87rem;
+  }
+
+  .our_history > h2 {
+    padding-left: 7.5rem;
+    width: 35rem;
+  }
+
+  .our_history > p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 44.6875rem;
+    float: right;
+    margin: 3.13rem 17.19rem 6.25rem 0;
+  }
+
+  .our_history > div {
+    display: inline-block;
+    border-radius: 4.375rem;
+    background: linear-gradient(66deg, #2e2bd0 -67.89%, #7876f2 125.28%);
+    height: 47.3125rem;
+    width: 100%;
+  }
+
+  .our_history .years {
+    display: flex;
+    width: 99%;
+    justify-content: space-evenly;
+    margin: 9.37rem 0 3.12rem 0;
+    align-items: center;
+  }
+
+  .our_history .years span {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .our_history .years span:nth-child(3) {
+    color: var(--main-white, #fff);
+    font-size: 5rem;
+  }
+
+  .our_history .year_markers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8rem;
+  }
+
+  .our_history .year_markers div {
+    width: 1px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    height: 6.875rem;
+  }
+
+  .our_history .year_markers div:nth-child(12n + 5) {
+    height: 9.375rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .our_history .year_markers div:nth-child(29) {
+    border-left: #fff solid 2px;
+  }
+
+  .our_history ul {
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    width: fit-content;
+    float: right;
+    margin-top: 3.13rem;
+    margin-right: 4rem;
+  }
+
+  .our_history ul li {
+    color: var(--main-white, #fff);
+    font-family: "Gilroy";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .our_history ul li::before {
+    content: "•";
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+  }
+
+  .our_history ul li span {
+    color: var(--main-white, #fff);
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 
 /* -----Phone----- */
 
 @media (max-width: 600px) {
+  /* Our history */
 
+  .our_history > p {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 6.25rem 0;
+  }
+
+  .our_history > div {
+    display: inline-block;
+    border-radius: 5.625rem;
+    background: linear-gradient(66deg, #2e2bd0 -67.89%, #7876f2 125.28%);
+    height: 76.25rem;
+    width: 100%;
+  }
+
+  .our_history .years {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 7.63rem;
+    margin: 5rem 0 3.12rem 0;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .our_history .years span {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Neue Machina";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .our_history .years span:nth-child(3) {
+    color: var(--main-white, #fff);
+    font-size: 6.25rem;
+  }
+
+  .our_history .year_markers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.75rem;
+    position: relative;
+    left: 0.9rem;
+  }
+
+  .our_history .year_markers div {
+    width: 1px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    height: 23.5125rem;
+  }
+
+  .our_history .year_markers div:nth-child(12n + 5) {
+    height: 32.0625rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .our_history .year_markers div:nth-child(29) {
+    border-left: #fff solid 2px;
+  }
+
+  .our_history ul {
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    width: fit-content;
+    float: right;
+    margin: 6.25rem 1.25rem 0 1.25rem;
+  }
+
+  .our_history ul li {
+    color: var(--main-white, #fff);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .our_history ul li::before {
+    content: "•";
+    font-size: 2.25rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+  }
+
+  .our_history ul li span {
+    color: var(--main-white, #fff);
+    font-family: "Gilroy";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: inline-block;
+    position: relative;
+    left: 2.7rem;
+  }
 }
