@@ -366,14 +366,27 @@
     justify-content: initial;
   }
 
-  .work_tiles div:last-child {
-    background-color: #6664e2;
-    color: rgba(255, 255, 255, 0.7);
+  .work_tiles > div:last-child {
+    background: linear-gradient(
+      87deg,
+      rgba(46, 43, 208, 1) -68.23%,
+      rgba(120, 118, 242, 1) 165.71%
+    );
     grid-row: 2/4;
     grid-column: 3/4;
     border: none;
     margin: 1.25rem 0 0 1.06rem;
+    padding: 0;
+  }
+
+  .work_tiles > div:last-child div {
+    background: url(../images/both/cloth_background.png);
     padding: 3.13rem 1.56rem 4.69rem 3.13rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .work_tiles div:last-child h4 {
@@ -851,6 +864,24 @@
     border: none;
     margin: 3.13rem 0 5rem 0;
     height: fit-content;
+    background: linear-gradient(
+      87deg,
+      rgba(46, 43, 208, 1) -68 23%,
+      rgba(120, 118, 242, 1) 165.71%
+    );
+    padding: 0;
+  }
+
+  .work_tiles > div:last-child div {
+    background: url(../images/both/cloth_background.png);
+    background-size: 110% 110%;
+    padding: 3.13rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
   }
 
   .work_tiles div:last-child h4 {
