@@ -98,13 +98,22 @@
     top: 9.38rem;
     right: 7.44rem;
   }
+
+
   .developers{
-    background:  url(../images/both/cloth_background.png);
     top: 15.94rem;
     left: 55.31rem;
     right: 23.56rem;
     bottom: 0rem;
-    background-color: rgba(41, 2, 46, 0);
+    background: linear-gradient(87deg,       
+    rgba(46, 43, 208, 0.7) -68.23%,
+    rgba(120, 118, 242, 1) 165.71%);
+    
+  }
+
+  .develop{
+    background:  url(../images/both/cloth_background.png);
+    color: rgba(255, 255, 255, 0.70);
   }
 
   .developers .text{
