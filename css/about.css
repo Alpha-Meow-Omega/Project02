@@ -123,8 +123,21 @@
     top: 7.13rem;
     left: 3.12rem;
   }
+  
+  .circle{
+    width: 11.25rem;
+    height: 11.25rem;
+    flex-shrink: 0;
+  }
 
+  .c0{
+    fill: var(--main-light, #9695E7);
+    stroke-width: 2px;
+    stroke: var(--main-white, #FFF);
+  }
 
+  /* Our team */
+  
 
   /* Our history */
 
