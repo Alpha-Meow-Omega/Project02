@@ -16,8 +16,12 @@
     line-height: normal;
   }
   .summary {
-    display: flex;
+    display: inline-block;
+    position: relative;
     margin-top: 6.75rem;
+    width: 101.25rem;
+    height: 30.6875rem;
+    flex-shrink: 0;
   }
 
   .summary .it {
@@ -28,9 +32,13 @@
     font-weight: 400;
     line-height: 150%;
     width: 47rem;
+    height: 28.437rem;
+    margin-bottom: 2.5;
   }
 
   .summary div {
+    display: inline-block;
+    position: absolute;
     border-radius: 2.5rem;
     border: 1px solid #2f353f;
     width: 22.375rem;
@@ -47,6 +55,85 @@
     line-height: normal;
     margin-top: 3.12rem;
     margin-left: 3.12rem;
+  }
+
+  .developers .nr{
+    color: var(--main-white, #FFF);
+  }
+
+  .text{
+    position: absolute;
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .developers .text{
+    color: rgba(255, 255, 255, 0.70);
+  }
+
+  .years{
+    top: 0rem;
+    left: 56.56rem;
+    right: 22.31rem;
+    bottom: 15.94rem;
+  }
+
+  .years .text{
+    top: 9.38rem;
+    right: 8.25rem;
+  }
+
+  .clientsww{
+    top: 0rem;
+    left: 78.88rem;
+    right: 0rem;
+    bottom: 15.94rem;
+  }
+
+  .clientsww .text{
+    top: 9.38rem;
+    right: 7.44rem;
+  }
+  .developers{
+    top: 15.94rem;
+    left: 55.31rem;
+    right: 23.56rem;
+    bottom: 0rem;
+    background:  url(../images/about/Block.png) lightgray center / contain no-repeat;
+    mix-blend-mode: luminosity;
+  }
+
+  .developers .text{
+    top: 9.37rem;
+    right: 6.94rem;
+  }
+
+  .weeks{
+    top: 14.75rem;
+    left: 78.88rem;
+    right: 0rem;
+    bottom: 1.24rem;
+  }
+
+  .weeks .text{
+    top: 7.13rem;
+    left: 3.12rem;
+  }
+  
+  .circle{
+    width: 11.25rem;
+    height: 11.25rem;
+    flex-shrink: 0;
+  }
+
+  .c0{
+    fill: var(--main-light, #9695E7);
+    stroke-width: 2px;
+    stroke: var(--main-white, #FFF);
   }
 
   /* Our team section */
@@ -128,6 +215,7 @@
     font-weight: 400;
     line-height: 150%;
   }
+
 
   /* Our history */
 
