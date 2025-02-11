@@ -137,7 +137,81 @@
   }
 
   /* Our team */
-  
+  .our_team{
+    display: inline-block;
+    width: 120rem;
+    height: 120.5625rem;
+    flex-shrink: 0;
+  }
+  .our_team .p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 44.6875rem;
+  }
+
+  .img{
+    width: 116.25rem;
+    height: 57.0625rem;
+    flex-shrink: 0;
+    border-radius: 4.375rem;
+    border: 2px solid var(--main-blue, #2E2BD0);
+    background: url(../images/about/Img.png) lightgray center / contain;
+    margin-left: -8.5rem;
+  }
+
+  .title{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .values .text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 29.25rem;
+  }
+
+  .line{
+    position: absolute;
+    width: 0rem;
+    height: 35.5rem;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--main-blue, #2E2BD0);
+    border-left: 1px solid #2E2BD0;
+  }
+
+  .l1{
+    /* left: 40.25rem;
+    right: 79.75rem;
+    top: 85.06rem;
+    bottom: 0rem; */
+  }
+
+  .l2{
+    /* left: 76.13rem;
+    right: 43.88rem;
+    top: 85.06rem;
+    bottom: 0rem; */
+  }
+
+  .honesty .nr{
+    left: 0rem;
+    top: 6.25rem;
+    right: 20.63rem;
+    bottom: 5.62rem;
+  }
 
   /* Our history */
 
