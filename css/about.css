@@ -210,17 +210,112 @@
     position: absolute;
     width: 11.25rem;
     height: 11.25rem;
+    border-radius: 50%;
+    overflow: hidden;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
   }
 
   .cblack{
-    background:url(../images/about/8.png);
+    background-image: url(../images/about/8.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cgrey{
+    background-image: url(../images/about/2.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cblue{
+    background-image: url(../images/about/3.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .c1{
+    top: 66.75rem;
+    left: 9.37rem;
+  }
+
+  .c2{
+    top: 66.75rem;
+    left: 17.56rem
+  }
+
+  .c3{
+    top: 66.75rem;
+    left: 25.75rem;
+  }
+
+  .c4{
+    top: 66.75rem;
+    left: 33.94rem;
+  }
+
+  .c5{
+    top: 66.75rem;
+    left: 42.12rem;
+  }
+
+  .c6{
+    top: 66.75rem;
+    left: 50.31rem;
+  }
+
+  .c7{
+    top: 66.75rem;
+    left: 58.5rem;
+  }
+
+  .c8{
+    top: 66.75rem;
+    left: 66.69rem;
+  }
+
+  .c9{
+    top: 66.75rem;
+    left: 74.87rem;
+  }
+
+  .c10{
+    top: 66.75rem;
+    left: 83.06rem;
+  }
+
+  .c11{
+    top: 66.75rem;
+    left: 91.25rem;
   }
 
   .c0{
-    fill: var(--main-light, #9695E7);
-    stroke-width: 2px;
-    stroke: var(--main-white, #fff);
+    background-image: url(../images/about/Block\ \(3\).png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 66.75rem;
+    left: 99.37rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plus{
+    background-image: url(../images/about/add.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6.75rem;
+    height: 6.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Our team section */
@@ -488,6 +583,8 @@
   nav {
     display: none;
   }
+
+  
 
   /* Our team section */
 
