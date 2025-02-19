@@ -106,7 +106,7 @@
     right: 23.56rem;
     bottom: 0rem;
     background: linear-gradient(87deg,       
-    rgba(46, 43, 208, 0.7) -68.23%,
+    rgba(46, 43, 208, 1) -68.23%,
     rgba(120, 118, 242, 1) 165.71%);
     
   }
@@ -138,6 +138,10 @@
     width: 11.25rem;
     height: 11.25rem;
     flex-shrink: 0;
+  }
+
+  .cblack{
+    background:url(../images/about/8.png);
   }
 
   .c0{
