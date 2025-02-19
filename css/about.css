@@ -110,7 +110,7 @@
     display: inline-block;
     position: absolute;
     border-radius: 2.5rem;
-    border: 1px solid #2f353f;
+    border: 1px solid #95989D;
     width: 22.375rem;
     height: 14.75rem;
     flex-shrink: 0;
@@ -584,7 +584,191 @@
     display: none;
   }
 
+  /* We are section */
+
+  .we_are {
+    width: 62.5rem;
+    height: 233.55rem;
+    flex-shrink: 0;
+  }
+
+  .we_are h2 {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .summary {
+    display: inline-block;
+    position: relative;
+    margin-top: 6.25rem;
+    width: 62.5rem;
+    height: 222.63rem;
+    flex-shrink: 0;
+  }
+
+  .summary .it {
+    color: rgba(47, 53, 63, 0.7);
+    font-family: Gilroy;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 62.5rem;
+    height: 37.5rem;
+    margin-bottom: 185.19rem;
+  }
+
+  .summary div {
+    display: inline-block;
+    position: absolute;
+    border-radius: 5.625rem;
+    border: 1.926px solid #95989D;
+    width: 62.5rem;
+    height: 39.0625rem;
+    flex-shrink: 0;
+  }
+
+  .nr {
+    color: var(--main-blue, #2e2bd0);
+    font-family: "Neue Machina";
+    font-size: 11rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 6.25rem;
+    margin-left: 6.25rem;
+  }
+
+  .text {
+    position: absolute;
+    color: rgba(47, 53, 63, 0.7);
+    font-family: Gilroy;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .years {
+    top: 43.75rem;
+  }
+
+  .years .text {
+    top: 28.12rem;
+    left: 6.25rem;
+  }
+
+  .clientsww {
+    top: 82.9rem;
+  }
+
+  .clientsww .text {
+    top: 28.13rem;
+    left: 6.25rem;
+  }
+
+
+  .developers {
+    top: 121.9rem;   
+  }
+
+  .developers .text {
+    top: 28.13rem;
+    left: 6.25rem;
+  }
+
+  .weeks {
+    top: 161.1rem;
+  }
+
+  .weeks .text {
+    top: 23.44rem;
+    left: 6.25rem;
+  }
   
+  .circle{
+    position: absolute;
+    width: 16.625rem;
+    height: 16.625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .cblack{
+    background-image: url(../images/about/8.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cgrey{
+    background-image: url(../images/about/2.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cblue{
+    background-image: url(../images/about/3.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .c1{
+    top: 243.12rem;
+    left: 2.5rem;
+  }
+
+  .c2{
+    top: 243.12rem;
+    left: 14rem
+  }
+
+  .c3{
+    top: 243.12rem;
+    left: 25.5rem;
+  }
+
+  .c4{
+    top: 243.12rem;
+    left: 36.94rem;
+  }
+
+  .c5, .c6, .c7, .c8, .c9, .c10, .c11{
+    display: none;
+  }
+ 
+  .c0{
+    background-image: url(../images/about/Block\ \(3\).png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 243.12rem;
+    left: 48.38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plus{
+    background-image: url(../images/about/add.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* Our team section */
 
