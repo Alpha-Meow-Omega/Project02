@@ -1,6 +1,76 @@
 /* -----Desktop----- */
 
 @media (min-width: 601px) {
+  /* Header */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.87rem 9.38rem 1.87rem;
+    border-bottom: 1px solid rgba(47, 53, 63, 0.5);
+  }
+
+  header .full_logo img {
+    width: 2.4375rem;
+    height: 2.5rem;
+    margin-top: 2.44rem;
+  }
+
+  header .full_logo span {
+    display: none;
+  }
+
+  nav {
+    color: var(--main-light, #2f353f);
+    font-family: "Neue Machina";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 7.5rem;
+    height: 7.4375rem;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a:first-child {
+    width: 6.125rem;
+    height: 2.4375rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--main-blue, #2e2bd0);
+    color: var(--main-blue, #2e2bd0);
+    text-align: center;
+    align-content: center;
+  }
+
+  nav .lang {
+    border-left: 1px solid rgba(47, 53, 63, 0.5);
+    align-self: stretch;
+    align-content: center;
+    padding-left: 5rem;
+    margin-left: -2.5rem;
+  }
+
+  nav .lang img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.62rem;
+  }
+
+  #menu_icon {
+    display: none;
+  }
+
+  .send_icon {
+    display: none;
+  }
+
+  /* We are section */
+
   .we_are {
     width: 120rem;
     height: 61.1875rem;
@@ -57,13 +127,13 @@
     margin-left: 3.12rem;
   }
 
-  .developers .nr{
-    color: var(--main-white, #FFF);
+  .developers .nr {
+    color: var(--main-white, #fff);
   }
 
-  .text{
+  .text {
     position: absolute;
-    color: rgba(47, 53, 63, 0.70);
+    color: rgba(47, 53, 63, 0.7);
     font-family: Gilroy;
     font-size: 1.5rem;
     font-style: normal;
@@ -71,36 +141,36 @@
     line-height: 150%;
   }
 
-  .developers .text{
-    color: rgba(255, 255, 255, 0.70);
+  .developers .text {
+    color: rgba(255, 255, 255, 0.7);
   }
 
-  .years{
+  .years {
     top: 0rem;
     left: 56.56rem;
     right: 22.31rem;
     bottom: 15.94rem;
   }
 
-  .years .text{
+  .years .text {
     top: 9.38rem;
     right: 8.25rem;
   }
 
-  .clientsww{
+  .clientsww {
     top: 0rem;
     left: 78.88rem;
     right: 0rem;
     bottom: 15.94rem;
   }
 
-  .clientsww .text{
+  .clientsww .text {
     top: 9.38rem;
     right: 7.44rem;
   }
 
 
-  .developers{
+  .developers {
     top: 15.94rem;
     left: 55.31rem;
     right: 23.56rem;
@@ -114,21 +184,24 @@
   .develop{
     background:  url(../images/both/cloth_background.png);
     color: rgba(255, 255, 255, 0.70);
+    background: url(../images/about/Block.png) lightgray center / contain
+      no-repeat;
+    mix-blend-mode: luminosity;
   }
 
-  .developers .text{
+  .developers .text {
     top: 9.37rem;
     right: 6.94rem;
   }
 
-  .weeks{
+  .weeks {
     top: 14.75rem;
     left: 78.88rem;
     right: 0rem;
     bottom: 1.24rem;
   }
 
-  .weeks .text{
+  .weeks .text {
     top: 7.13rem;
     left: 3.12rem;
   }
@@ -147,7 +220,7 @@
   .c0{
     fill: var(--main-light, #9695E7);
     stroke-width: 2px;
-    stroke: var(--main-white, #FFF);
+    stroke: var(--main-white, #fff);
   }
 
   /* Our team section */
@@ -229,7 +302,6 @@
     font-weight: 400;
     line-height: 150%;
   }
-
 
   /* Our history */
 
@@ -346,6 +418,77 @@
 /* -----Phone----- */
 
 @media (max-width: 600px) {
+  /* Header */
+
+  header {
+    width: 62.5rem;
+    height: fit-content;
+    padding: 6.25rem 2.5rem 0 2.5rem;
+    display: grid;
+    grid-template: 7.25rem / 7.25rem 1fr 7.25rem;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 12.56rem;
+  }
+
+  div.full_logo {
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+  }
+
+  header .full_logo img {
+    width: 6.8125rem;
+    height: auto;
+    display: inline-block;
+    margin-right: 0.87rem;
+  }
+
+  .full_logo span {
+    color: var(--main-light, #2f353f);
+    font-family: "TT Norms";
+    font-size: 2.875rem;
+  }
+
+  #menu_icon {
+    background: var(--main-blue, #2e2bd0);
+    color: white;
+    border-radius: 1.25rem;
+    width: 7.25rem;
+    height: 7.25rem;
+    align-content: center;
+  }
+
+  #menu_icon img {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: block;
+    margin: auto;
+  }
+
+  .send_icon {
+    background: var(--main-blue, #2e2bd0);
+    color: white;
+    border-radius: 1.25rem;
+    width: 7.25rem;
+    height: 7.25rem;
+    align-content: center;
+  }
+
+  .send_icon img {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: block;
+    margin: auto;
+  }
+
+  nav {
+    display: none;
+  }
+
   /* Our team section */
 
   .our_team > p {
