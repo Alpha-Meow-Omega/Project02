@@ -1,6 +1,6 @@
 /* -----Desktop----- */
 
-@media (min-width: 601px) {
+@media (min-width: 701px) {
   /* Header */
 
   header {
@@ -73,7 +73,6 @@
 
   .we_are {
     width: 120rem;
-    height: 61.1875rem;
     flex-shrink: 0;
   }
 
@@ -110,7 +109,7 @@
     display: inline-block;
     position: absolute;
     border-radius: 2.5rem;
-    border: 1px solid #95989D;
+    border: 1px solid #95989d;
     width: 22.375rem;
     height: 14.75rem;
     flex-shrink: 0;
@@ -169,24 +168,33 @@
     right: 7.44rem;
   }
 
-
-  .developers {
-    top: 15.94rem;
-    left: 55.31rem;
+  div.developers {
+    top: 14.94rem;
+    left: 54.31rem;
     right: 23.56rem;
     bottom: 0rem;
-    background: linear-gradient(87deg,       
-    rgba(46, 43, 208, 1) -68.23%,
-    rgba(120, 118, 242, 1) 165.71%);
-    
+    background: linear-gradient(
+      87deg,
+      rgba(46, 43, 208, 1) -68.23%,
+      rgba(120, 118, 242, 1) 165.71%
+    );
+    background: linear-gradient(
+      87deg,
+      rgba(46, 43, 208, 1) -68.23%,
+      rgba(120, 118, 242, 1) 165.71%
+    );
+    grid-row: 2/4;
+    grid-column: 3/4;
+    border: none;
+    margin: 1.25rem 0 0 1.06rem;
+    padding: 0;
   }
 
-  .develop{
-    background:  url(../images/both/cloth_background.png);
-    color: rgba(255, 255, 255, 0.70);
-    background: url(../images/about/Block.png) lightgray center / contain
-      no-repeat;
-    mix-blend-mode: luminosity;
+  div.develop {
+    background: url(../images/both/cloth_background.png);
+    border: none;
+    background-size: 110% 110%;
+    border-radius: inherit;
   }
 
   .developers .text {
@@ -205,117 +213,42 @@
     top: 7.13rem;
     left: 3.12rem;
   }
-  
-  .circle{
-    position: absolute;
+
+  .circles {
+    display: grid;
+    grid-template: 1fr / repeat(12, 8.25rem);
+    margin-top: 12.5rem;
+    margin-bottom: 18.75rem;
+  }
+
+  .circles div {
     width: 11.25rem;
     height: 11.25rem;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    border-radius: 100%;
+    border: 1px solid white;
   }
 
-  .cblack{
-    background-image: url(../images/about/8.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  .circles div:nth-child(3n + 0) {
+    background-color: #2e2bd0;
   }
 
-  .cgrey{
-    background-image: url(../images/about/2.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  .circles div:nth-child(3n + 1) {
+    background-color: #2f353f;
   }
 
-  .cblue{
-    background-image: url(../images/about/3.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  .circles div:nth-child(3n + 2) {
+    background-color: #c1c2c5;
   }
 
-  .c1{
-    top: 66.75rem;
-    left: 9.37rem;
+  .circles div:last-child {
+    background-color: #9695e7;
+    align-content: center;
+    text-align: center;
   }
 
-  .c2{
-    top: 66.75rem;
-    left: 17.56rem
-  }
-
-  .c3{
-    top: 66.75rem;
-    left: 25.75rem;
-  }
-
-  .c4{
-    top: 66.75rem;
-    left: 33.94rem;
-  }
-
-  .c5{
-    top: 66.75rem;
-    left: 42.12rem;
-  }
-
-  .c6{
-    top: 66.75rem;
-    left: 50.31rem;
-  }
-
-  .c7{
-    top: 66.75rem;
-    left: 58.5rem;
-  }
-
-  .c8{
-    top: 66.75rem;
-    left: 66.69rem;
-  }
-
-  .c9{
-    top: 66.75rem;
-    left: 74.87rem;
-  }
-
-  .c10{
-    top: 66.75rem;
-    left: 83.06rem;
-  }
-
-  .c11{
-    top: 66.75rem;
-    left: 91.25rem;
-  }
-
-  .c0{
-    background-image: url(../images/about/Block\ \(3\).png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 66.75rem;
-    left: 99.37rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .plus{
-    background-image: url(../images/about/add.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  .circles div:last-child img {
     width: 6.75rem;
     height: 6.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   /* Our team section */
@@ -512,7 +445,7 @@
 
 /* -----Phone----- */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   /* Header */
 
   header {
@@ -588,7 +521,6 @@
 
   .we_are {
     width: 62.5rem;
-    height: 233.55rem;
     flex-shrink: 0;
   }
 
@@ -605,7 +537,6 @@
     position: relative;
     margin-top: 6.25rem;
     width: 62.5rem;
-    height: 222.63rem;
     flex-shrink: 0;
   }
 
@@ -625,7 +556,7 @@
     display: inline-block;
     position: absolute;
     border-radius: 5.625rem;
-    border: 1.926px solid #95989D;
+    border: 1.926px solid #95989d;
     width: 62.5rem;
     height: 39.0625rem;
     flex-shrink: 0;
@@ -645,7 +576,7 @@
   .text {
     position: absolute;
     color: rgba(47, 53, 63, 0.7);
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 3.125rem;
     font-style: normal;
     font-weight: 400;
@@ -670,9 +601,8 @@
     left: 6.25rem;
   }
 
-
   .developers {
-    top: 121.9rem;   
+    top: 121.9rem;
   }
 
   .developers .text {
@@ -688,86 +618,47 @@
     top: 23.44rem;
     left: 6.25rem;
   }
-  
-  .circle{
-    position: absolute;
+
+  .circles {
+    margin-top: -14rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template: 1fr / repeat(5, 11.5rem);
+  }
+
+  .circles div:nth-child(7) ~ div {
+    display: block;
+  }
+
+  .circles div {
     width: 16.625rem;
     height: 16.625rem;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-  }
-
-  .cblack{
-    background-image: url(../images/about/8.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .cgrey{
-    background-image: url(../images/about/2.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .cblue{
-    background-image: url(../images/about/3.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .c1{
-    top: 243.12rem;
-    left: 2.5rem;
-  }
-
-  .c2{
-    top: 243.12rem;
-    left: 14rem
-  }
-
-  .c3{
-    top: 243.12rem;
-    left: 25.5rem;
-  }
-
-  .c4{
-    top: 243.12rem;
-    left: 36.94rem;
-  }
-
-  .c5, .c6, .c7, .c8, .c9, .c10, .c11{
+    border-radius: 100%;
+    border: 1px solid white;
     display: none;
   }
- 
-  .c0{
-    background-image: url(../images/about/Block\ \(3\).png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 243.12rem;
-    left: 48.38rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .circles div:nth-child(3n + 0) {
+    background-color: #2e2bd0;
   }
 
-  .plus{
-    background-image: url(../images/about/add.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  .circles div:nth-child(3n + 1) {
+    background-color: #2f353f;
+  }
+
+  .circles div:nth-child(3n + 2) {
+    background-color: #c1c2c5;
+  }
+
+  .circles div:last-child {
+    background-color: #9695e7;
+    align-content: center;
+    text-align: center;
+  }
+
+  .circles div:last-child img {
     width: 10rem;
     height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   /* Our team section */

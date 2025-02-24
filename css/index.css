@@ -1,6 +1,6 @@
 /* -----Desktop----- */
 
-@media (min-width: 601px) {
+@media (min-width: 701px) {
   /* Header */
 
   header {
@@ -294,6 +294,7 @@
     padding-left: 3.18rem;
     margin-left: -3.18rem;
     border-radius: 0.2rem;
+    border-radius: 0;
   }
 
   .choose_us div {
@@ -530,7 +531,7 @@
 
 /* -----Phone----- */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   /* Header */
 
   header {
@@ -784,6 +785,7 @@
     position: relative;
     bottom: 5px;
     margin-top: 0.2rem;
+    border-radius: 0;
   }
 
   .choose_us div {
